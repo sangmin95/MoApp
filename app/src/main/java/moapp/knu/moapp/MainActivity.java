@@ -9,6 +9,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //adsf
+        //test
         setContentView(R.layout.activity_main);
         System.out.println("test");
 
