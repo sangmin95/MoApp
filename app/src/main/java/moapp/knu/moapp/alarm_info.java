@@ -22,7 +22,7 @@ public class alarm_info extends AppCompatActivity {
         setContentView(R.layout.activity_alarm_info);
         //illdb 생성
         dbHelper = new DBHelper(alarm_info.this,"illdb",null,1);
-        //dbHelper.addIllnese(Corona);
+        dbHelper.addIllnese(Corona);
         dbHelper.addIllnese(kennel);
         dbHelper.addIllnese(Dirofilaria);
         dbHelper.addIllnese(rabies);
