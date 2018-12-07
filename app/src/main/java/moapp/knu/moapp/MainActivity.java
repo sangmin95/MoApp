@@ -1,17 +1,20 @@
 package moapp.knu.moapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //adsf
-        //test
         setContentView(R.layout.activity_main);
-        System.out.println("test");
+    }
 
+    public void login(View v){
+        Intent i = new Intent(MainActivity.this, SignInActivity.class);
+        startActivity(i);
     }
 }
