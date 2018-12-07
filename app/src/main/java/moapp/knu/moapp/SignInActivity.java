@@ -88,6 +88,7 @@ public class SignInActivity extends AppCompatActivity implements GoogleApiClient
             if(result.isSuccess()){
                 GoogleSignInAccount account = result.getSignInAccount();
                 firebaseAuthWithGoogle(account);
+                Toast.makeText(SignInActivity.this,"sign in successfully", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), SignInActivity.class);
                 startActivity(intent);
             }else{
@@ -105,9 +106,9 @@ public class SignInActivity extends AppCompatActivity implements GoogleApiClient
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             FirebaseUser user = firebaseAuth.getCurrentUser();
-                            Toast.makeText(SignInActivity.this, "login success!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignInActivity.this, "firebase login success!", Toast.LENGTH_SHORT).show();
                         }else{
-                            Toast.makeText(SignInActivity.this, "login failed TT", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignInActivity.this, "firebase login failed TT", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
