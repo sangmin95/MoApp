@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".CareActivity"
     android:background="@drawable/main_background">
+
 
     <LinearLayout
         android:id="@+id/linear1"
@@ -13,15 +14,14 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_alignParentBottom="true"
-       >
+        >
 
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="0dp"
             android:layout_height="70dp"
             android:layout_weight="1"
-            android:src="@drawable/care"
-            android:onClick="careClick"/>
+            android:src="@drawable/care2" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -56,11 +56,4 @@
             android:onClick="boardClick"/>
 
     </LinearLayout>
-
-
-
-
-
-
-
 </RelativeLayout>
