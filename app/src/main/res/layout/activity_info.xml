@@ -4,25 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    
-    tools:context=".MainActivity"
+    tools:context=".InfoActivity"
     android:background="@drawable/main_background">
-  
-  <Button
-        android:id="@+id/button1"
-        android:text="go to log-in menu"
-        android:onClick="login"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent" />
 
-  
     <LinearLayout
         android:id="@+id/linear1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_alignParentBottom="true"
-       >
+        >
 
         <ImageView
             android:id="@+id/imageView1"
@@ -45,8 +36,7 @@
             android:layout_width="0dp"
             android:layout_height="70dp"
             android:layout_weight="1"
-            android:src="@drawable/info"
-            android:onClick="infoClick"/>
+            android:src="@drawable/info2" />
 
         <ImageView
             android:id="@+id/imageView4"
@@ -65,5 +55,4 @@
             android:onClick="boardClick"/>
 
     </LinearLayout>
-
 </RelativeLayout>

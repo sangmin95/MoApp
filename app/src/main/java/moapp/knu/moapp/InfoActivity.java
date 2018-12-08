@@ -1,28 +1,18 @@
 package moapp.knu.moapp;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.util.Log;
 
-public class MainActivity extends AppCompatActivity {
-    Button btnMoveillness;
-    static final String TAG_d = "sangmin main";
+public class InfoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
+        setContentView(R.layout.activity_info);
 
-    public void login(View v){
-        Intent i = new Intent(MainActivity.this, SignInActivity.class);
-        startActivity(i);
-
-        Log.d(TAG_d,"onCreate");
+        getWindow().setWindowAnimations(0);
     }
 
     public void careClick(View v){
@@ -45,5 +35,4 @@ public class MainActivity extends AppCompatActivity {
         Intent intent1 = new Intent(this, BoardActivity.class);
         startActivity(intent1);
     }
-
 }
