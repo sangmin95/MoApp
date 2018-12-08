@@ -19,14 +19,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".alarm_info" />
-        <activity android:name=".IllneseList">
         <activity android:name=".MainActivity" />
         <activity android:name=".CareActivity" />
         <activity android:name=".HospitalActivity" />
         <activity android:name=".InfoActivity" />
         <activity android:name=".NoticeActivity" />
-        <activity android:name=".BoardActivity"></activity>
+        <activity android:name=".BoardActivity"/>
     </application>
 
 </manifest>

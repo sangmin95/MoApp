@@ -18,17 +18,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Log.d(TAG_d,"onCreate");
-        btnMoveillness  = (Button)findViewById(R.id.button_illnese);
-
-        btnMoveillness.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                Intent intent = new Intent(
-                        getApplicationContext(),
-                        alarm_info.class);
-                startActivity(intent);
-            }
-        });
     }
 
     public void careClick(View v){
