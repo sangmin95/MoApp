@@ -3,6 +3,7 @@ package moapp.knu.moapp;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -60,6 +61,7 @@ public class SignInActivity extends AppCompatActivity implements GoogleApiClient
                 .build();
 
         mGoogleApiClient = new GoogleApiClient.Builder(this)
+
                 .enableAutoManage(this, this)
                 .addApi(Auth.GOOGLE_SIGN_IN_API, googleSignInOptions)
                 .build();
@@ -89,7 +91,7 @@ public class SignInActivity extends AppCompatActivity implements GoogleApiClient
                 GoogleSignInAccount account = result.getSignInAccount();
                 firebaseAuthWithGoogle(account);
                 Toast.makeText(SignInActivity.this,"sign in successfully", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(getApplicationContext(), SignInActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
             }else{
                 Toast.makeText(SignInActivity.this,"login failed",Toast.LENGTH_SHORT ).show();
