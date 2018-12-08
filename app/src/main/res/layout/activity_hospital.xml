@@ -4,25 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".HospitalActivity"
     android:background="@drawable/main_background">
 
-  <Button
-        android:id="@+id/button_illnese"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="강아지 예방접종 정보보기"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="356dp" />
-  
+
     <LinearLayout
         android:id="@+id/linear1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_alignParentBottom="true"
-       >
-
+        >
 
         <ImageView
             android:id="@+id/imageView1"
@@ -37,8 +29,7 @@
             android:layout_width="0dp"
             android:layout_height="70dp"
             android:layout_weight="1"
-            android:src="@drawable/hospital"
-            android:onClick="hospitalClick"/>
+            android:src="@drawable/hospital2" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -65,8 +56,4 @@
             android:onClick="boardClick"/>
 
     </LinearLayout>
-
-
-
-
 </RelativeLayout>
