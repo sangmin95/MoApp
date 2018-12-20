@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InfoActivity"
+    tools:context=".CareActivity"
     android:background="@drawable/main_background">
+
     <ImageView
         android:src="@drawable/dogdogface"
         android:id="@+id/mainButton"
@@ -14,73 +15,88 @@
         android:layout_centerHorizontal="true"
         android:onClick="mainClick"/>
 
-    <LinearLayout
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_below="@id/mainButton"
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:orientation="horizontal"
-        android:id="@+id/shinlin">
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="예방접종가이드"
-            android:onClick="yebang"
-            />
-
-
-
-
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="강아지 금지 음식"
-            android:onClick="forbid"
-            />
-    </LinearLayout>
-
-
-
-
-    <LinearLayout
-        android:layout_below="@id/shinlin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_above="@id/linear1"
-        android:id="@+id/shinlin2">
+        android:layout_margin="7dp"
+        >
 
-        <Button
-            android:id="@+id/shinbutton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="계절별 건강관리"
-            android:onClick="on_health"
-            />
+        <LinearLayout
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"  >
 
-        <Button
-            android:id="@+id/shinbutton1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="건강의 적신호"
-            android:onClick="on_red"
-            />
-    </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/red1"
+                />
 
 
 
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/red2"
+
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/red3"
+
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/red4"
+
+                />
 
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/red5"
+                />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/red6"
+
+                />
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/red7"
+
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/red8"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
 
 
 

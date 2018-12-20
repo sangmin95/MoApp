@@ -49,4 +49,7 @@ public class InfoActivity extends AppCompatActivity {
     {
         setContentView(R.layout.activity_yebang);
     }
+    public void forbid(View v) { setContentView(R.layout.forbid);}
+    public void on_health(View v) {setContentView(R.layout.health);}
+    public void on_red(View v) {setContentView(R.layout.red);}
 }

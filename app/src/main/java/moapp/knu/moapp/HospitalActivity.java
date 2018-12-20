@@ -19,8 +19,6 @@ import jxl.Workbook;
 import jxl.read.biff.BiffException;
 
 public class HospitalActivity extends AppCompatActivity {
-
-
     SQLiteDatabase db;
     String[] v1;
     String[] v2;
@@ -33,9 +31,7 @@ public class HospitalActivity extends AppCompatActivity {
         setContentView(R.layout.activity_hospital);
         getWindow().setWindowAnimations(0);
         deleteDatabase("hospital.db");
-
         db = openOrCreateDatabase( "hospital.db",SQLiteDatabase.CREATE_IF_NECESSARY,null );
-
         String table = "hospital2";
         db.execSQL("create table if not exists " +table+ "("
                 + "_id integer primary key AUTOINCREMENT,"
@@ -43,12 +39,8 @@ public class HospitalActivity extends AppCompatActivity {
                 + "phone text,"
                 + "address text,"
                 + "allnight text);");
-
         makeDB();
-
-
         setlist();
-
     }
     public void makeDB(){
 
@@ -90,8 +82,6 @@ public class HospitalActivity extends AppCompatActivity {
         if(db != null){
             // db.close();
         }
-
-
     }
 
     public void setlist()
