@@ -15,24 +15,33 @@ public class InfoActivity extends AppCompatActivity {
         getWindow().setWindowAnimations(0);
     }
 
-    public void careClick(View v){
+    public void careClick(View v) {
         Intent intent1 = new Intent(this, CareActivity.class);
         startActivity(intent1);
     }
-    public void hospitalClick(View v){
+
+    public void hospitalClick(View v) {
         Intent intent1 = new Intent(this, HospitalActivity.class);
         startActivity(intent1);
     }
-    public void infoClick(View v){
+
+    public void infoClick(View v) {
         Intent intent1 = new Intent(this, InfoActivity.class);
         startActivity(intent1);
     }
-    public void noticeClick(View v){
+
+    public void noticeClick(View v) {
         Intent intent1 = new Intent(this, NoticeActivity.class);
         startActivity(intent1);
     }
-    public void boardClick(View v){
+
+    public void boardClick(View v) {
         Intent intent1 = new Intent(this, BoardActivity.class);
+        startActivity(intent1);
+    }
+
+    public void mainClick(View v) {
+        Intent intent1 = new Intent(this, MainActivity.class);
         startActivity(intent1);
     }
 }

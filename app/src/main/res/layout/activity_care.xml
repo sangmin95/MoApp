@@ -7,7 +7,22 @@
     tools:context=".CareActivity"
     android:background="@drawable/main_background">
 
+    <ImageView
+        android:src="@drawable/dogdogface"
+        android:id="@+id/mainButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="mainClick"/>
 
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "강아지케어"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"/>
     <LinearLayout
         android:id="@+id/linear1"
         android:layout_width="match_parent"

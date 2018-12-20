@@ -35,4 +35,9 @@ public class HospitalActivity extends AppCompatActivity {
         Intent intent1 = new Intent(this, BoardActivity.class);
         startActivity(intent1);
     }
+
+    public void mainClick(View v){
+        Intent intent1 = new Intent(this, MainActivity.class);
+        startActivity(intent1);
+    }
 }

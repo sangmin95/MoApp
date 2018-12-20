@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        getWindow().setWindowAnimations(0);
     }
 
     public void login(View v){
@@ -45,5 +47,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent1 = new Intent(this, BoardActivity.class);
         startActivity(intent1);
     }
+
+    /*public void mainClick(View v){
+        Intent intent1 = new Intent(this, MainActivity.class);
+        startActivity(intent1);
+    }*/
 
 }
