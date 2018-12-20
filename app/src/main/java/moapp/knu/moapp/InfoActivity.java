@@ -44,4 +44,9 @@ public class InfoActivity extends AppCompatActivity {
         Intent intent1 = new Intent(this, MainActivity.class);
         startActivity(intent1);
     }
+
+    public void yebang(View v)
+    {
+        setContentView(R.layout.activity_yebang);
+    }
 }

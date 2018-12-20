@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CareActivity"
+    android:background="@drawable/main_background">
+
+    <ImageView
+        android:src="@drawable/dogdogface"
+        android:id="@+id/mainButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="mainClick"/>
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollIndicators="bottom"
+    android:layout_below="@id/mainButton"
+    android:layout_above="@id/linear1"
+    >
+
+    <LinearLayout
+
+
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="match_parent"
+        android:layout_height="213dp"
+        android:layout_below="@id/mainButton"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/jon1" />
+
+        <TextView
+            android:layout_margin="5dp"
+            android:id="@+id/shintex"
+            android:layout_below="@id/img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="혼합백신은 강아지에게 접종하는 가장 기본적인 예방 접종입니다.
+홍역, 간염, 피부 장염, 파라 인플루엔자, 렙토스피라를 예방하며 생후 6주-8주부터 2주 간격으로 5차까지 접종 후 이후부터 1년에 1회씩 추가 접종합니다."
+            android:textSize="15dp"
+            />
+
+
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="match_parent"
+        android:layout_height="213dp"
+        android:layout_below="@id/shintex"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/jon2" />
+
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/shintex2"
+        android:layout_below="@id/img3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="강아지 감기라고 불리는 켄넬코프를 예방하는 주사입니다.
+생후 14주부터 2주 간격으로 2차 접종하고
+이후부터 1년에 한 번씩 추가 접종합니다!."
+        android:textSize="15dp"
+        />
+
+
+
+
+    <ImageView
+        android:id="@+id/img4"
+        android:layout_width="match_parent"
+        android:layout_height="213dp"
+        android:layout_below="@id/shintex2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/jon3" />
+
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/shintex3"
+        android:layout_below="@id/img3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="코로나 장염으로 인한 구토, 설사, 탈수를 예방합니다.
+생후 14주부터 2주 간격으로 2차 접종 이후부터
+1년에 1회씩 추가 접종합니다."
+        android:textSize="15dp"
+        />
+
+
+
+
+    <ImageView
+        android:id="@+id/img5"
+        android:layout_width="match_parent"
+        android:layout_height="213dp"
+        android:layout_below="@id/shintex3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/jon4" />
+
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/shintex4"
+        android:layout_below="@id/img5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="심장 사상충은 주로 초여름에(4월~7월) 발생하는 질병으로
+모기로 전염되는 회충입니다.
+작은 실처럼 생긴 기생충이기 때문에
+심장 사상충으로 불리는 것입니다.
+생후 3-4개월 미만 어린 강아지들은 먹여 주시는 것이 좋고
+그 이후부터는 1년에 1회씩 접종해주시면 됩니다."
+        android:textSize="15dp"
+        />
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/img6"
+        android:layout_width="match_parent"
+        android:layout_height="213dp"
+        android:layout_below="@id/shintex4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/jon5" />
+
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/shintex5"
+        android:layout_below="@id/img6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="광견병은 리사 바이러스로 인해 발병하는 광견병을 예방할 수 있습니다.
+생후 6개월 이후 1년에 한 번씩은 추가접종을 해야 합니다."
+        android:textSize="15dp"
+        />
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/care"
+            android:onClick="careClick"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/hospital"
+            android:onClick="hospitalClick"/>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/info2" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/notice"
+            android:onClick="noticeClick"/>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/board"
+            android:onClick="boardClick"/>
+
+    </LinearLayout>
+</RelativeLayout>

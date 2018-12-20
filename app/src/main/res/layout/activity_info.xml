@@ -14,14 +14,71 @@
         android:layout_centerHorizontal="true"
         android:onClick="mainClick"/>
 
-    <TextView
-        android:id="@+id/t1"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_below="@id/mainButton"
+
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text = "강아지정보"
-        android:textSize="30sp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerInParent="true"/>
+
+        android:orientation="horizontal"
+        android:id="@+id/shinlin">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="예방접종가이드"
+            android:onClick="yebang"
+            />
+
+
+
+
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="강아지 음식" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_below="@id/shinlin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@id/linear1"
+        android:id="@+id/shinlin2">
+
+        <Button
+            android:id="@+id/shinbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="계절별 건강관리" />
+
+        <Button
+            android:id="@+id/shinbutton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="건강의 적신호" />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
     <LinearLayout
         android:id="@+id/linear1"
         android:layout_width="match_parent"
