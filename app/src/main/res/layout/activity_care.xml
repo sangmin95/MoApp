@@ -19,27 +19,29 @@
 
     <ImageView
         android:id="@+id/foodButton1"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:src = "@drawable/asd"
+        android:layout_width="280dp"
+        android:layout_height="140dp"
+        android:src = "@drawable/f1"
         android:onClick="foodClick"
-        android:layout_center="true"/>
+        android:layout_centerInParent="true"/>
     <ImageView
         android:id="@+id/voiceButton1"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_width="220dp"
+        android:layout_height="110dp"
         android:src = "@drawable/v1"
         android:onClick="voiceClick"
         android:layout_above="@id/foodButton1"
+        android:layout_centerHorizontal="true"
         />
 
     <ImageView
         android:id="@+id/streamingButton1"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_width="260dp"
+        android:layout_height="130dp"
         android:src = "@drawable/s1"
         android:onClick="streamingClick"
         android:layout_below="@id/foodButton1"
+        android:layout_centerHorizontal="true"
         />
 
     <LinearLayout

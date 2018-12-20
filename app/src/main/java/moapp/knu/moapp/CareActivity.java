@@ -27,8 +27,6 @@ public class CareActivity extends AppCompatActivity {
         setContentView(R.layout.activity_care);
         getWindow().setWindowAnimations(0);
 
-        ButtonVoice=(Button)findViewById(R.id.voice);
-        ButtonFood=(Button)findViewById(R.id.food);
 
     }
 
