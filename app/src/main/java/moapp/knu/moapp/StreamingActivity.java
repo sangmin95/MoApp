@@ -29,7 +29,7 @@ public class StreamingActivity extends AppCompatActivity {
         Log.d("abc","abc");
         webSettings.setJavaScriptEnabled(true);
         Log.d("abc","abc");
-        webView.loadUrl("http://naver.com");
+        webView.loadUrl("218.157.242.96:8081");
         Log.d("abc","abc");
     }
 }

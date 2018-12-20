@@ -15,19 +15,32 @@
         android:layout_centerHorizontal="true"
         android:onClick="mainClick"/>
 
-    <Button
-        android:id="@+id/Button123"
+
+
+    <ImageView
+        android:id="@+id/foodButton1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text = "스트리밍 보기"
-        android:textSize="30sp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerInParent="true"
-        android:onClick = "streamingClick"/>
+        android:layout_height="match_parent"
+        android:src = "@drawable/asd"
+        android:onClick="foodClick"
+        android:layout_center="true"/>
+    <ImageView
+        android:id="@+id/voiceButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src = "@drawable/v1"
+        android:onClick="voiceClick"
+        android:layout_above="@id/foodButton1"
+        />
 
-
-
-
+    <ImageView
+        android:id="@+id/streamingButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src = "@drawable/s1"
+        android:onClick="streamingClick"
+        android:layout_below="@id/foodButton1"
+        />
 
     <LinearLayout
         android:id="@+id/linear1"
@@ -78,23 +91,5 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/food"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="179dp"
-        android:text="먹이"
-        android:onClick="foodClick"/>
 
-    <Button
-        android:id="@+id/voice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/food"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="101dp"
-        android:onClick="voiceClick"
-        android:text="목소리" />
 </RelativeLayout>
