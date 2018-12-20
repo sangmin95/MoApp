@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class BoardActivity extends AppCompatActivity {
+    //게시판 보기
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
