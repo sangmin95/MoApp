@@ -22,6 +22,7 @@ public class StreamingActivity extends AppCompatActivity {
         webView.setWebViewClient(new WebViewClient());
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+
         webView.loadUrl("http://218.157.242.96:8081/");
     }
 }

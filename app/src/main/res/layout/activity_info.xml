@@ -13,85 +13,52 @@
         android:layout_height="60dp"
         android:layout_centerHorizontal="true"
         android:onClick="mainClick"/>
-
-    <LinearLayout
-        android:layout_below="@id/mainButton"
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:orientation="horizontal"
-        android:id="@+id/shinlin">
-
-        <Button
-            android:id="@+id/button3"
+        <LinearLayout
+            android:id="@+id/asdf"
+            android:layout_below="@id/mainButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="예방접종가이드"
-            android:onClick="yebang"
-            />
+            android:layout_height="250dp">
+            <ImageView
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/a4"
+                android:onClick="yebang" />
 
+            <ImageView
+                android:id="@+id/button4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/a3"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@id/asdf"
+              android:layout_width="wrap_content"
+            android:layout_height="250dp">
+            <ImageView
+                android:id="@+id/shinbutton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/a2" />
 
-
-
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="강아지 금지 음식"
-            android:onClick="forbid"
-            />
-    </LinearLayout>
-
-
-
-
-    <LinearLayout
-        android:layout_below="@id/shinlin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_above="@id/linear1"
-        android:id="@+id/shinlin2">
-
-        <Button
-            android:id="@+id/shinbutton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="계절별 건강관리"
-            android:onClick="on_health"
-            />
-
-        <Button
-            android:id="@+id/shinbutton1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="건강의 적신호"
-            android:onClick="on_red"
-            />
-    </LinearLayout>
-
-
-
-
-
-
-
-
-
+            <ImageView
+                android:id="@+id/shinbutton1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/a1" />
+          </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linear1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_alignParentBottom="true"
-        >
+        android:layout_alignParentBottom="true">
 
         <ImageView
             android:id="@+id/imageView1"
