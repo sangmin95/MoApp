@@ -7,7 +7,7 @@ import android.util.Log;
 import android.view.View;
 
 public class NoticeActivity extends AppCompatActivity {
-
+//강아지 정보 알림
     private  DBHelper dbHelper;
     static final String TAG_d = "sangmin alarm_info";
     Illnese Corona = new Illnese("코로나 바이러스",1);
