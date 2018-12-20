@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="moapp.knu.moapp">
+    <uses-permission android:name="android.permission.INTERNET" />
+
 
     <application
         android:allowBackup="true"
@@ -25,7 +27,8 @@
         <activity android:name=".HospitalActivity" />
         <activity android:name=".InfoActivity" />
         <activity android:name=".NoticeActivity" />
-        <activity android:name=".BoardActivity"/>
+        <activity android:name=".BoardActivity" />
+        <activity android:name=".StreamingActivity"></activity>
     </application>
 
 </manifest>

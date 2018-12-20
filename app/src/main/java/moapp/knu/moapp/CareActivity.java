@@ -40,4 +40,9 @@ public class CareActivity extends AppCompatActivity {
         Intent intent1 = new Intent(this, MainActivity.class);
         startActivity(intent1);
     }
+
+    public void streamingClick(View v){
+        Intent intent1 = new Intent(this, StreamingActivity.class);
+        startActivity(intent1);
+    }
 }
