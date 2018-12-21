@@ -1,16 +1,16 @@
 package moapp.knu.moapp;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
     Button btnMoveillness;
     static final String TAG_d = "sangmin main";
+    Server server;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         getWindow().setWindowAnimations(0);
+
+        server = new Server(MainActivity.this);
+
     }
 
     public void login(View v){

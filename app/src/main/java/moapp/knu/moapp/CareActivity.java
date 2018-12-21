@@ -19,7 +19,6 @@ public class CareActivity extends AppCompatActivity {
     //강아지 케어 서비스
     static final String TAG_d = "sangmin main";
     Button ButtonVoice, ButtonFood;
-    Socket socket = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
