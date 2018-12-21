@@ -2,6 +2,7 @@ package moapp.knu.moapp;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
@@ -37,6 +38,7 @@ public class RSSListView extends ListView {
      */
     private void init() {
         // set OnItemClickListener for processing OnDataSelectionListener
+        Log.d("click","init");
         setOnItemClickListener(new OnItemClickAdapter());
     }
 
@@ -46,6 +48,7 @@ public class RSSListView extends ListView {
      * @param adapter
      */
     public void setAdapter(BaseAdapter adapter) {
+        Log.d("click","setAdapter");
         super.setAdapter(adapter);
 
     }
@@ -56,6 +59,7 @@ public class RSSListView extends ListView {
      * @return
      */
     public BaseAdapter getAdapter() {
+        Log.d("click","getAdapter");
         return (BaseAdapter)super.getAdapter();
     }
 
@@ -65,6 +69,7 @@ public class RSSListView extends ListView {
      * @param listener
      */
     public void setOnDataSelectionListener(OnDataSelectionListener listener) {
+        Log.d("click","setOnDataSelectionListener");
         this.selectionListener = listener;
     }
 
@@ -74,6 +79,7 @@ public class RSSListView extends ListView {
      * @return
      */
     public OnDataSelectionListener getOnDataSelectionListener() {
+        Log.d("click","OnDataSelectionListener");
         return selectionListener;
     }
 
@@ -83,9 +89,12 @@ public class RSSListView extends ListView {
 
         }
 
+        @Override
         public void onItemClick(AdapterView parent, View v, int position, long id) {
+            Log.d("click","onItemClick");
 
             if (selectionListener == null) {
+                Log.d("click","selectionListener == null");
                 return;
             }
 

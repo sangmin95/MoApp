@@ -11,8 +11,6 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -50,35 +48,26 @@ public class BoardActivity extends AppCompatActivity {
         // create a ListView instance
         ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
         list = new RSSListView(this);
-
         adapter = new RSSListAdapter(this);
         list.setAdapter(adapter);
+        Log.d(TAG,"setAdapter");
         list.setOnDataSelectionListener(new OnDataSelectionListener() {
             public void onDataSelected(AdapterView parent, View v, int position, long id) {
+                Log.d(TAG,"onDataSelected"+position+" id= "+id);
                 RSSNewsItem curItem = (RSSNewsItem) adapter.getItem(position);
                 String curTitle = curItem.getTitle();
 
                 Toast.makeText(getApplicationContext(), "Selected : " + curTitle, Toast.LENGTH_LONG).show();
             }
         });
-
+        Log.d(TAG,"setOnDataSelectionListener finish");
         newsItemList = new ArrayList<RSSNewsItem>();
 
         LinearLayout mainLayout = (LinearLayout) findViewById(R.id.mainLayout);
         mainLayout.addView(list, params);
+        showRSS(rssUrl);
 
-        final EditText edit01 = (EditText) findViewById(R.id.edit01);
-        edit01.setText(rssUrl);
 
-        Button show_btn = (Button) findViewById(R.id.show_btn);
-        show_btn.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v) {
-                //String inputStr = edit01.getText().toString();
-                showRSS(rssUrl);
-            }
-
-        });
     }
 
     private void showRSS(String urlStr) {
@@ -178,15 +167,6 @@ public class BoardActivity extends AppCompatActivity {
             Log.d(TAG,"title");
             Element link = (Element) entry.getElementsByTagName("link").item(0);
             Log.d(TAG,"link");
-            NodeList pubDataNode = entry.getElementsByTagName("pubDate");
-            Log.d(TAG,"pubDate");
-
-            if (pubDataNode == null) {
-                pubDataNode = entry.getElementsByTagName("dc:date");
-                Log.d(TAG,"dc:date");
-            }
-            Element pubDate = (Element) pubDataNode.item(0);
-            Log.d(TAG,"pubDateNode.item=0");
 
 
             String titleValue = null;
@@ -205,19 +185,12 @@ public class BoardActivity extends AppCompatActivity {
             }
 
 
-            String pubDateValue = null;
-            if (pubDate != null) {
-                Node firstChild = pubDate.getFirstChild();
-                if (firstChild != null) {
-                    pubDateValue = firstChild.getNodeValue();
-                }
-            }
 
 
 
-            Log.d(TAG, "item node : " + titleValue + ", " + linkValue + ", "  + pubDateValue);
+            Log.d(TAG, "item node : " + titleValue + ", " + linkValue);
 
-            newsItem = new RSSNewsItem(titleValue, linkValue,pubDateValue);
+            newsItem = new RSSNewsItem(titleValue, linkValue);
 
         } catch (DOMException e) {
             e.printStackTrace();

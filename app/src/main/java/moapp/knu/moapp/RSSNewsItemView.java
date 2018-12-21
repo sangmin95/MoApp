@@ -48,10 +48,6 @@ public class RSSNewsItemView extends LinearLayout {
         mText01 = (TextView) findViewById(R.id.dataItem01);
         mText01.setText(aItem.getTitle());
 
-        // Set Text 02
-        mText02 = (TextView) findViewById(R.id.dataItem02);
-        mText02.setText(aItem.getPubDate());
-
         // Set Text 04
         mText04 = (WebView) findViewById(R.id.dataItem04);
         //mText04.setText(aItem.getDescription());

@@ -7,10 +7,6 @@ public class RSSNewsItem {
 
     private String title;
     private String link;
-    private String description;
-    private String pubDate;
-    private String author;
-    private String category;
 
     private Drawable mIcon;
 
@@ -23,10 +19,9 @@ public class RSSNewsItem {
     /**
      * Initialize with icon and strings
      */
-    public RSSNewsItem(String title, String link, String pubDate) {
+    public RSSNewsItem(String title, String link) {
         this.title = title;
         this.link = link;
-        this.pubDate = pubDate;
     }
 
     /**
@@ -63,30 +58,7 @@ public class RSSNewsItem {
         this.link = link;
     }
 
-    public String getDescription() {
-        return description;
-    }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public String getPubDate() {
-        return pubDate;
-    }
-
-
-    public String getAuthor() {
-        return author;
-    }
-
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
-    }
 
     /**
      * Compare with the input object
@@ -99,16 +71,7 @@ public class RSSNewsItem {
             return -1;
         } else if (link.equals(other.getLink())) {
             return -1;
-        } else if (description.equals(other.getDescription())) {
-            return -1;
-        } else if (pubDate.equals(other.getPubDate())) {
-            return -1;
-        } else if (author.equals(other.getAuthor())) {
-            return -1;
-        } else if (category.equals(other.getCategory())) {
-            return -1;
         }
-
         return 0;
     }
 

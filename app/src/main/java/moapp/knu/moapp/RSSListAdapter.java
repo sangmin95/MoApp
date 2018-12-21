@@ -54,7 +54,6 @@ public class RSSListAdapter extends BaseAdapter {
             itemView = (RSSNewsItemView) convertView;
 
             itemView.setText(0, mItems.get(position).getTitle());
-            itemView.setText(1, mItems.get(position).getPubDate());
         }
 
         return itemView;

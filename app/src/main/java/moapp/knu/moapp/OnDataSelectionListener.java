@@ -1,5 +1,6 @@
 package moapp.knu.moapp;
 
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 
@@ -9,7 +10,6 @@ import android.widget.AdapterView;
  * @author Mike
  */
 public interface OnDataSelectionListener {
-
     /**
      * Method that is called when an item is selected in DataListView
      *
