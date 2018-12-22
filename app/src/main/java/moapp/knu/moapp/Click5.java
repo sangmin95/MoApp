@@ -1,5 +1,4 @@
 package moapp.knu.moapp;
-
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
@@ -8,17 +7,13 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
-
 public class Click5 extends AppCompatActivity {
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_click5);
         getWindow().setWindowAnimations(0);
     }
-
     public void on_register(View v)
     {
         deleteDatabase("mypet.db");
@@ -50,13 +45,11 @@ public class Click5 extends AppCompatActivity {
         String s7 = edt6.getText().toString();
         Log.d("asdfasdfsd","asdfsadf");
         String sql = "insert into mypet (name, age, kg, simsang, gisang, goanggun, sex) VALUES ('"+s1+"','"+s2+"','"+s3+"','"+s4+"','"+s5+"','"+s6+"','"+s7+"');";
-
         db.execSQL(sql);
         Toast.makeText(this,"강아지 등록이 완료되었습니다",Toast.LENGTH_LONG).show();
         Intent intent1 = new Intent(this,NoticeActivity.class);
         startActivity(intent1);
     }
-
     public void careClick(View v){
         Intent intent1 = new Intent(this, CareActivity.class);
         startActivity(intent1);
@@ -81,6 +74,4 @@ public class Click5 extends AppCompatActivity {
         Intent intent1 = new Intent(this, MainActivity.class);
         startActivity(intent1);
     }
-
-
 }

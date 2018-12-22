@@ -162,6 +162,7 @@
         android:src="@drawable/btnpng4"
         android:layout_below="@id/edt9"
         android:layout_above="@id/linear1"
+        android:onClick="on_register"
 
         />
 
