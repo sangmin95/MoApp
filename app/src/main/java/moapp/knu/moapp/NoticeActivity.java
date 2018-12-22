@@ -23,20 +23,17 @@ public class NoticeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notice);
         getWindow().setWindowAnimations(0);
-
-
-
     }
-    public void on_click1(View v)
+    public void click1(View v)
     {
         Log.d("asdfasdf","adfklajfklajfklawjfklawjefklasjkfl");
         Log.d("asdfasdf","adfklajfklajfklawjfklawjefklasjkfl");
-        Intent intent1 = new Intent(this, Click1.class);
+        Intent intent1 = new Intent(this, Click5.class);
         Log.d("asdfasdf","adfklajfklajfklawjfklawjefklasjkfl");
         Log.d("asdfasdf","adfklajfklajfklawjfklawjefklasjkfl");
         Log.d("asdfasdf","adfklajfklajfklawjfklawjefklasjkfl");
-      //  startActivity(intent1);
-        setContentView(R.layout.activity_click1);
+        startActivity(intent1);
+       // setContentView(R.layout.activity_click1);
     }
 
 
@@ -44,7 +41,7 @@ public class NoticeActivity extends AppCompatActivity {
     public void on_click3(View v)
     {
 
-        Intent intent1 = new Intent(this, Click3.class);
+        Intent intent1 = new Intent(this, Click6.class);
         startActivity(intent1);
     }
 

@@ -21,7 +21,7 @@
         android:src="@drawable/puppy3"
         android:layout_below="@id/mainButton"
         android:id="@+id/ssss"
-        android:onClick="on_click1"
+        android:onClick="click1"
         />
 
     <ImageView
@@ -31,7 +31,7 @@
         android:src="@drawable/puppy2"
         android:layout_below="@id/ssss"
         android:id="@+id/adsfasdf"
-        android:onClick="on_click2"
+
         />
 
 

@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Click1"
+    tools:context=".Click5"
     android:background="@drawable/main_background">
+
 
     <ImageView
         android:src="@drawable/dogdogface"
