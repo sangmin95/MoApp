@@ -12,7 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import org.w3c.dom.DOMException;
 import org.w3c.dom.Document;
@@ -42,7 +41,7 @@ public class BoardActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_board);
-
+        Log.d(TAG,"onCreate");
         getWindow().setWindowAnimations(0);
 
         // create a ListView instance
@@ -51,15 +50,17 @@ public class BoardActivity extends AppCompatActivity {
         adapter = new RSSListAdapter(this);
         list.setAdapter(adapter);
         Log.d(TAG,"setAdapter");
+
         list.setOnDataSelectionListener(new OnDataSelectionListener() {
             public void onDataSelected(AdapterView parent, View v, int position, long id) {
                 Log.d(TAG,"onDataSelected"+position+" id= "+id);
                 RSSNewsItem curItem = (RSSNewsItem) adapter.getItem(position);
                 String curTitle = curItem.getTitle();
-
-                Toast.makeText(getApplicationContext(), "Selected : " + curTitle, Toast.LENGTH_LONG).show();
+                //toast
+                postwebClick(curItem.getLink());
             }
         });
+
         Log.d(TAG,"setOnDataSelectionListener finish");
         newsItemList = new ArrayList<RSSNewsItem>();
 
@@ -249,6 +250,13 @@ public class BoardActivity extends AppCompatActivity {
     public void mainClick(View v){
         Intent intent1 = new Intent(this, MainActivity.class);
         startActivity(intent1);
+    }
+
+    public void postwebClick(String url){
+        //Toast.makeText(getApplicationContext(),url,Toast.LENGTH_SHORT).show();
+        Intent intent_url = new Intent(this, postweb.class);
+        intent_url.putExtra("link",url);
+        startActivity(intent_url);
     }
 
 }
