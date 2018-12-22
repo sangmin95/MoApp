@@ -30,7 +30,8 @@
         <activity android:name=".BoardActivity" />
         <activity android:name=".StreamingActivity" />
         <activity android:name=".Click5" />
-        <activity android:name=".Click6"></activity>
+        <activity android:name=".Click6" />
+        <activity android:name=".postweb"></activity>
     </application>
 
 </manifest>

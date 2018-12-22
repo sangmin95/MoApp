@@ -68,18 +68,6 @@ public class CareActivity extends AppCompatActivity {
                 OutputStream out = socket.getOutputStream();
                 out.write(myMessage.getBytes());
 
-                /*
-                ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream(1024);
-                byte[] buffer = new byte[1024];
-                int bytesRead;
-                InputStream inputStream = ((Socket) socket).getInputStream();
-
-                while ((bytesRead = inputStream.read(buffer)) != -1){
-                    byteArrayOutputStream.write(buffer, 0, bytesRead);
-                    response += byteArrayOutputStream.toString("UTF-8");
-                }
-                response = "서버의 응답: " + response;
-                */
             } catch (UnknownHostException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
