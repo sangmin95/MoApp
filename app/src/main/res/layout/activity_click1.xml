@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoticeActivity"
+    android:background="@drawable/main_background">
+
+    <ImageView
+        android:src="@drawable/dogdogface"
+        android:id="@+id/mainButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="mainClick"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="강아지 정보를 등록해 주세요"
+        android:layout_below="@id/mainButton"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:id = "@+id/tx1"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:textSize="35dp"
+        android:text="이름 : "
+        android:layout_below="@id/tx1"
+        android:textStyle="bold"
+        android:id="@+id/tx2"
+        />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tx2"
+        android:layout_below="@id/tx1"
+        android:id="@+id/edt2"
+        android:hint="예 ) 보라"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tx2"
+        android:id="@+id/edt3"
+        android:text="나이(몇 주인지) : "
+        />
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="예) 5"
+        android:layout_below="@+id/tx2"
+        android:layout_toRightOf="@id/edt3"
+        android:id="@+id/edt4"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="몸무게(Kg) : "
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:layout_below="@id/edt4"
+        android:id="@+id/tx4"
+        />
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="예 ) 8"
+        android:layout_below="@id/edt4"
+        android:layout_toRightOf="@id/tx4"
+        android:id="@+id/edt5"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:textSize="35dp"
+        android:text="심장사상충 예방일 : "
+        android:layout_below="@+id/edt5"
+        android:textStyle="bold"
+        android:id="@+id/tx5"
+        />
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="예 ) 23"
+        android:layout_below="@id/edt5"
+        android:layout_toRightOf="@id/tx5"
+        android:id="@+id/edt6"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:textSize="35dp"
+        android:text="외부기생충 예방일 : "
+        android:layout_below="@+id/edt6"
+        android:textStyle="bold"
+        android:id="@+id/tx6"
+        />
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="예 ) 11"
+        android:layout_below="@id/edt6"
+        android:layout_toRightOf="@id/tx6"
+        android:id="@+id/edt7"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:textSize="35dp"
+        android:text="광견병접종 예방달 : "
+        android:layout_below="@+id/edt7"
+        android:textStyle="bold"
+        android:id="@+id/tx7"
+        />
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="예 ) 3"
+        android:layout_below="@id/edt7"
+        android:layout_toRightOf="@id/tx7"
+        android:id="@+id/edt8"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:textSize="35dp"
+        android:text="중성화 유무(y/n) : "
+        android:layout_below="@+id/edt8"
+        android:textStyle="bold"
+        android:id="@+id/tx8"
+        />
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="예 ) y"
+        android:layout_below="@id/edt8"
+        android:layout_toRightOf="@id/tx8"
+        android:id="@+id/edt9"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/btnpng4"
+        android:layout_below="@id/edt9"
+        android:layout_above="@id/linear1"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/care"
+            android:onClick="careClick"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/hospital"
+            android:onClick="hospitalClick"/>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/info"
+            android:onClick="infoClick"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/notice2" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/board"
+            android:onClick="boardClick"
+
+            />
+
+    </LinearLayout>
+</RelativeLayout>

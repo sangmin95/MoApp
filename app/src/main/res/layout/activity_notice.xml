@@ -15,14 +15,38 @@
         android:layout_centerHorizontal="true"
         android:onClick="mainClick"/>
 
-    <TextView
-        android:id="@+id/t1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text = "알림"
-        android:textSize="30sp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerInParent="true"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/puppy3"
+        android:layout_below="@id/mainButton"
+        android:id="@+id/ssss"
+        android:onClick="on_click1"
+        />
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/puppy2"
+        android:layout_below="@id/ssss"
+        android:id="@+id/adsfasdf"
+        android:onClick="on_click2"
+        />
+
+
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/btnimg4"
+        android:layout_below="@id/adsfasdf"
+        android:id="@+id/fsdf"
+        android:onClick="on_click3"
+        />
+
+
     <LinearLayout
         android:id="@+id/linear1"
         android:layout_width="match_parent"
@@ -30,6 +54,8 @@
         android:orientation="horizontal"
         android:layout_alignParentBottom="true"
         >
+
+
 
         <ImageView
             android:id="@+id/imageView1"

@@ -32,6 +32,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:src="@drawable/a3"
+                android:onClick="forbid"
                 />
         </LinearLayout>
         <LinearLayout
@@ -43,14 +44,18 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/a2" />
+                android:src="@drawable/a2"
+                android:onClick="on_health"
+                />
 
             <ImageView
                 android:id="@+id/shinbutton1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/a1" />
+                android:src="@drawable/a1"
+                android:onClick="on_red"
+                />
           </LinearLayout>
 
     <LinearLayout
