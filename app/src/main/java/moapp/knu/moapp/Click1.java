@@ -13,15 +13,8 @@ public class Click1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Log.d("asdfasdf","adfklajfklajfklawjfklawjefklasjkfl");
-        Log.d("asdfasdf","adfklajfklajfklawjfklawjefklasjkfl");
-        super.onCreate(savedInstanceState);
-        Log.d("asdfasdf","adfklajfklajfklawjfklawjefklasjkfl");
-        Log.d("asdfasdf","adfklajfklajfklawjfklawjefklasjkfl");
+       super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_click1);
-        Log.d("asdfasdf","adfklajfklajfklawjfklawjefklasjkfl");
-        Log.d("asdfasdf","adfklajfklajfklawjfklawjefklasjkfl");
-
     }
 
     public void on_register(View v)

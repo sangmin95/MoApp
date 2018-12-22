@@ -35,7 +35,8 @@ public class NoticeActivity extends AppCompatActivity {
         Log.d("asdfasdf","adfklajfklajfklawjfklawjefklasjkfl");
         Log.d("asdfasdf","adfklajfklajfklawjfklawjefklasjkfl");
         Log.d("asdfasdf","adfklajfklajfklawjfklawjefklasjkfl");
-        startActivity(intent1);
+      //  startActivity(intent1);
+        setContentView(R.layout.activity_click1);
     }
 
 
